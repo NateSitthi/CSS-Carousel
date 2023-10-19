@@ -8,7 +8,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #e2bf74, #de9755);
+    background: linear-gradient(to bottom, #ffffff, #5D6063);
     font-family: 'Ropa Sans', sans-serif;
 }
 
@@ -19,7 +19,8 @@ body {
 }
 
 .slideshow-container {
-    width: 500px;
+    width: 100rem;
+    height: 50rem;
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -51,8 +52,8 @@ body {
 .slides > div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 500px;
-    height: 500px;
+    width: 100rem;
+    height: 50rem;
     border-radius: 10px;
     background: #eee;
     transform-origin: center center;
@@ -88,11 +89,11 @@ body {
     display: inline-flex;
     width: 1.5rem;
     height: 1.5rem;
-    background: white;
+    background: #5D6063;
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 20%;
     margin: 0 0.25rem;
     box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
@@ -104,7 +105,9 @@ body {
 .slideshow-nav > a:focus {
     background: #000;
 }
-
+.slideshow-nav > a:visited {
+    background: #e1e1e0;
+}
 /* Touch devices don't need button navigation */
 @supports (scroll-snap-type) {
   .slideshow-nav {
